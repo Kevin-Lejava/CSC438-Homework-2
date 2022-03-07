@@ -6,12 +6,12 @@ import { Place } from './place.model'
 export class PlacesService {
   private _places: Place[] = [
     new Place(
-      id: 'p1',
-      title: 'Manhattan Mansion',
-      description: 'In the heart of New York City.',
-      imageUrl: '',
+      id: "p1",
+      title: "Manhattan Mansion",
+      description: "In the heart of New York City.",
+      imageUrl: "placeholder",
       price: 149.99
-    ),
+    )
   ]
 
   get places() {
