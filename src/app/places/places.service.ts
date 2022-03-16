@@ -6,13 +6,21 @@ import { Place } from './place.model'
 export class PlacesService {
   private _places: Place[] = [
     new Place(
-      id: "p1",
-      title: "Manhattan Mansion",
-      description: "In the heart of New York City.",
-      imageUrl: "placeholder",
-      price: 149.99
+      "p1",
+      "Manhattan Mansion",
+      "In the heart of New York City.",
+      "placeholder",
+      149.99
+    ),
+
+    new Place(
+      "p2",
+      "PlaceHolder",
+      "PlaceHolder",
+      "placeholder",
+      999.99
     )
-  ]
+  ];
 
   get places() {
     return [...this._places];

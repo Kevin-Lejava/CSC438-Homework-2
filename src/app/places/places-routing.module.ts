@@ -23,12 +23,12 @@ const routes: Routes = [
           {path: ':placeId', loadChildren: () => import('./offers/offer-bookings/offer-bookings.module').then (m => m.OfferBookingsPageModule)}
         ]
       },
-      {path: '', redirectTo: '/places/tabs', pathMatch: 'full'}
+      {path: '', redirectTo: '/places/tabs/', pathMatch: 'full'}
     ]
   },
   {
     path: '',
-    redirectTo: '/places/tabs',
+    redirectTo: '/places/tabs/',
     pathMatch: 'full'
   }
 ];
